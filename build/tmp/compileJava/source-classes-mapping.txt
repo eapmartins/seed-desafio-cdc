@@ -1,0 +1,16 @@
+com/eapmartins/casadocodigo/CasaDoCodigoApplication.java
+ com.eapmartins.casadocodigo.CasaDoCodigoApplication
+com/eapmartins/casadocodigo/validation/FieldError.java
+ com.eapmartins.casadocodigo.validation.FieldError
+com/eapmartins/casadocodigo/autor/NovoAutorRequest.java
+ com.eapmartins.casadocodigo.autor.NovoAutorRequest
+com/eapmartins/casadocodigo/autor/Autor.java
+ com.eapmartins.casadocodigo.autor.Autor
+com/eapmartins/casadocodigo/validation/ValidationErrorHandler.java
+ com.eapmartins.casadocodigo.validation.ValidationErrorHandler
+com/eapmartins/casadocodigo/validation/ValidationErrors.java
+ com.eapmartins.casadocodigo.validation.ValidationErrors
+com/eapmartins/casadocodigo/autor/NovoAutorResponse.java
+ com.eapmartins.casadocodigo.autor.NovoAutorResponse
+com/eapmartins/casadocodigo/autor/AutorController.java
+ com.eapmartins.casadocodigo.autor.AutorController
