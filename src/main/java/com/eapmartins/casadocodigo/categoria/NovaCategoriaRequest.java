@@ -1,10 +1,14 @@
 package com.eapmartins.casadocodigo.categoria;
 
+import com.eapmartins.casadocodigo.autor.Autor;
+import com.eapmartins.casadocodigo.compartilhado.UniqueValue;
+
 import javax.validation.constraints.NotBlank;
 
 public class NovaCategoriaRequest {
 
     @NotBlank
+    @UniqueValue(domainClass = Categoria.class, fieldName = "nome")
     private String nome;
 
     public NovaCategoriaRequest() {
