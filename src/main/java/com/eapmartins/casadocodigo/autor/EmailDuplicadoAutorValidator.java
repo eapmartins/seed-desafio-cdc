@@ -30,6 +30,6 @@ public class EmailDuplicadoAutorValidator implements Validator {
         Optional<Autor> autor = repository.findByEmail(request.getEmail());
 
         if (autor.isPresent())
-            errors.reject("email", null, "email já cadastrado");
+            errors.rejectValue("email", null, "email já cadastrado");
     }
 }

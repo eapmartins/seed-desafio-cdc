@@ -1,6 +1,5 @@
 package com.eapmartins.casadocodigo.autor;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,11 +16,14 @@ import javax.validation.Valid;
 @RestController
 public class AutorController {
 
-    @Autowired
-    private EmailDuplicadoAutorValidator emailDuplicadoAutorValidator;
+    private final EmailDuplicadoAutorValidator emailDuplicadoAutorValidator;
 
     @PersistenceContext
     private EntityManager entityManager;
+
+    public AutorController(EmailDuplicadoAutorValidator emailDuplicadoAutorValidator) {
+        this.emailDuplicadoAutorValidator = emailDuplicadoAutorValidator;
+    }
 
     @InitBinder
     public void init(WebDataBinder binder) {
