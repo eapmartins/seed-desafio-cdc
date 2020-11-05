@@ -20,6 +20,7 @@ public class Autor {
     private String descricao;
     private Instant criadoEm = Instant.now();
 
+    @Deprecated
     public Autor() {
     }
 

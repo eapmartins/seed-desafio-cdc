@@ -2,9 +2,7 @@ package com.eapmartins.casadocodigo.autor;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.time.Instant;
 
 public class NovoAutorRequest {
 
@@ -18,11 +16,15 @@ public class NovoAutorRequest {
     @NotBlank
     @Size(max = 400)
     private String descricao;
-
+    
     public NovoAutorRequest(@NotBlank String nome, @Email @NotBlank String email, @NotBlank @Size(max = 400) String descricao) {
         this.nome = nome;
         this.email = email;
         this.descricao = descricao;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     @Override
